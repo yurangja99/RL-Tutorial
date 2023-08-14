@@ -21,20 +21,51 @@ This notebook trained simple DQN network for two tasks - Acrobot-v1 and CartPole
 
 |Acrobot-v1|CartPole-v1|
 |-|-|
-|![](images/dqn_tutorial_results/dqn_acrobot.png)|![](images/dqn_tutorial_results/dqn_cartpole.png)|
-|![](images/dqn_tutorial_results/dqn_acrobot.gif)|![](images/dqn_tutorial_results/dqn_cartpole.gif)|
+|![](./images/dqn_tutorial_results/dqn_acrobot.gif)|![](./images/dqn_tutorial_results/dqn_cartpole.gif)|
+|![](./images/dqn_tutorial_results/dqn_acrobot.png)|![](./images/dqn_tutorial_results/dqn_cartpole.png)|
+
+## [dqn](./dqn.ipynb)
+
+Jupyter notebook to deal with various dqn-based algorithms. 
+In this notebook, the agent is trained on various tasks - Pong-v5, Breakout-v5, Enduro-v5, and DemonAttack-v5. 
+
+### Pong
+Example:
+
+![](./images/dqn_results/dqn_pong.gif)
+
+For rainbow algorithm, training status is shown in plot below. 
+- **Noise**: Rainbow algorithm includes noisy networks, which perturbes weight and bias of networks. We can see that noise decreases as the agent learns Pong. 
+- **Loss**: Loss between model prediction and transition samples. 
+- **Frames per episode**: Increases in early training stage as the agent starts to get points, and decreases in the end as the opponent rarely get points. 
+- **Score**: Converges around 20.0
+
+![](./images/dqn_results/dqn_pong_plot.png)
+
+Plot below shows test scores for various DQN-based algorithms. All of them shows satisfying scores because Pong is easy environment, but Dueling and Rainbow shows the best performance. 
+
+![](./images/dqn_results/dqn_pong_compare.png)
+
+### Enduro
+(Todo)
+
+### Breakout
+(Todo)
+
+### DemonAttack
+(Todo)
 
 ## Todo
 
 ### Value based
 - [x] DQN
-- [ ] PER (Prioritized Experience Replay)
-- [ ] Double DQN
-- [ ] Dueling DQN
-- [ ] Multi-step learning
-- [ ] Distributional RL (C51)
-- [ ] Noisy Networks
-- [ ] Rainbow
+- [x] PER (Prioritized Experience Replay)
+- [x] Double DQN
+- [x] Dueling DQN
+- [x] Multi-step learning
+- [x] Distributional RL (QR-DQN)
+- [x] Noisy Networks
+- [x] Rainbow
 
 ### Policy based
 - [ ] REINFORCE
