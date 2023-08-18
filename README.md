@@ -55,6 +55,22 @@ Plot below shows test scores for various DQN-based algorithms. All of them shows
 ### DemonAttack
 (Todo)
 
+## [reinforce_tutorial](./reinforce_tutorial.ipynb)
+
+Jupyter notebook to deal with simple REINFORCE algorithm. 
+REINFORCE is a policy-based reinforcement learning algorithm that is model-free and on-policy. 
+
+It is kind of Monte-Carlo and model is updated after each episode ends. 
+
+$$ \theta \leftarrow \theta + \alpha \sum_{t=0}^T G_t \nabla_\theta \ln \pi(A_t|S_t;\pi_\theta) $$
+
+This notebook trained simple policy network for CartPole-V1 
+
+|CartPole-v1|
+|-|
+|![](./images/reinforce_tutorial_results/reinforce_cartpole.gif)|
+|![](./images/reinforce_tutorial_results/reinforce_cartpole.png)|
+
 ## Todo
 
 ### Value based
@@ -68,7 +84,7 @@ Plot below shows test scores for various DQN-based algorithms. All of them shows
 - [x] Rainbow
 
 ### Policy based
-- [ ] REINFORCE
+- [x] REINFORCE
 - [ ] Actor Critic
 - [ ] A2C (Advantage Actor Critic)
 - [ ] A3C (Asynchronous Advantage Actor Critic)
