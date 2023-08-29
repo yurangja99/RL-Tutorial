@@ -47,7 +47,21 @@ Plot below shows test scores for various DQN-based algorithms. All of them shows
 ![](./images/dqn_results/dqn_pong_compare.png)
 
 ### Enduro
-(Todo)
+Example:
+
+![](./images/dqn_results/dqn_enduro.gif)
+
+For Dueling DQN, training status is shown in the plot below. 
+- **Epsilon**: The agent followed random policy probability of 0.9 in the leary stage, then turns to greedy policy. The final random policy probability is 0.1. 
+- **Loss**: Loss between model prediction and transition samples. 
+- **Frames per episode**: In enduro, longer game means higher score. So number of frames increases during the training. 
+- **Score**: Increases rapidly, and seems to converge to 900 ~ 1000. SOTA algorithm shows 2300, but my model did around 40% of optimal algorithm. 
+
+![](./images/dqn_results/dqn_enduro_plot.png)
+
+Plot below shows test scores for various DQN-based algorithms. All of them shows final scores around 800 ~ 100. I think Dueling DQN was the best performer. However, it didn't play enduro well as SOTA algorithm. The reason can be (1) implementation fault (2) bad hyperparameter (3) not enough training. 
+
+![](./images/dqn_results/dqn_enduro_compare.png)
 
 ### Breakout
 (Todo)
