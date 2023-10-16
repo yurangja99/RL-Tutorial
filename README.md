@@ -85,6 +85,14 @@ This notebook trained simple policy network for CartPole-V1
 |![](./images/reinforce_tutorial_results/reinforce_cartpole.gif)|
 |![](./images/reinforce_tutorial_results/reinforce_cartpole.png)|
 
+## [reinforce](./reinforce.ipynb)
+
+Notebook with various REINFORCE-based algorithms such as REINFORCE, Actor-Critic, A2C, and A3C. 
+The agent is trained on two tasks - CarRacing-v2 (discrete action), and CarRacing-v2 (continuous action)
+
+### CarRacing
+(TODO)
+
 ## Todo
 
 ### Value based

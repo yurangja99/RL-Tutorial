@@ -162,6 +162,5 @@ cython_debug/
 dqn_tutorial
 dqn
 reinforce_tutorial
-reinforce
+reinforce_based
 dummy
-dqn_copy.ipynb
