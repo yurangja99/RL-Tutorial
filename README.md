@@ -88,9 +88,26 @@ This notebook trained simple policy network for CartPole-V1
 ## [reinforce](./reinforce.ipynb)
 
 Notebook with various REINFORCE-based algorithms such as REINFORCE, Actor-Critic, A2C, and A3C. 
-The agent is trained on two tasks - CarRacing-v2 (discrete action), and CarRacing-v2 (continuous action)
+The agent is trained on two tasks - LunarLander-v2 (discrete action), and BipedalWalker-v3 (continuous action)
 
-### CarRacing
+### LunarLander
+Example:
+
+(TODO)
+
+training status of REINFORCE is shown in the plot below. 
+- **J($\theta$)**: Object function for policy gradient. Increases as training because expected reward increases. 
+- **Loss**: Actor loss and critic loss. REINFORCE has actor loss only. 
+- **Frames per episode**: In LunarLander, frames increases as the rocket avoids crashing, but decreases as it can land in shorter time. 
+- **Score**: Increases as training, and converges to 100 ~ 200. Scores above 200 are considered as succeess, so my REINFORCE couldn't truly success. 
+
+![](./images/reinforce_results/reinforce_lunarlander.png)
+
+Plot below shows test scores for various REINFORCE-based algorithms. 
+
+![](./images/reinforce_results/reinforce_lunarlander_compare.png)
+
+### BipedalWalker
 (TODO)
 
 ## Todo
@@ -107,7 +124,7 @@ The agent is trained on two tasks - CarRacing-v2 (discrete action), and CarRacin
 
 ### Policy based
 - [x] REINFORCE
-- [ ] Actor Critic
+- [x] Actor Critic
 - [ ] A2C (Advantage Actor Critic)
 - [ ] A3C (Asynchronous Advantage Actor Critic)
 - [ ] DDPG (Deep Deterministic Policy Gradient)
